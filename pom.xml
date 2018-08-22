@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.ldy.study</groupId>
+  <artifactId>SpringMongo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+	<!-- 版本信息 -->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <version.spring.framework-data>2.0.9.RELEASE</version.spring.framework-data>
+    <version.springframework>4.3.1.RELEASE</version.springframework>
+  </properties>
+  
+  <!-- 定义仓库信息 -->
+  <repositories>
+  	<repository>
+	    <id>spring-milestone</id>
+	    <name>Spring Maven MILESTONE Repository</name>
+	    <url>http://repo.spring.io/libs-milestone</url>
+  	</repository>
+  </repositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework.data</groupId>
+    	<artifactId>spring-data-mongodb</artifactId>
+    	<version>2.0.9.RELEASE</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.slf4j</groupId>
+    	<artifactId>slf4j-api</artifactId>
+    	<version>1.7.25</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.slf4j</groupId>
+    	<artifactId>slf4j-log4j12</artifactId>
+    	<version>1.7.12</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.mongodb</groupId>
+    	<artifactId>mongo-java-driver</artifactId>
+    	<version>3.5.0</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework.data</groupId>
+    	<artifactId>spring-data-commons</artifactId>
+    	<version>2.0.9.RELEASE</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.alibaba</groupId>
+    	<artifactId>fastjson</artifactId>
+    	<version>1.2.34</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-test</artifactId>
+    	<version>4.3.9.RELEASE</version>
+    </dependency>
+  </dependencies>
+</project>
